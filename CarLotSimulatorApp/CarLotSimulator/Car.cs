@@ -22,5 +22,10 @@ public class Car
         HonkNoise = honkNoise;
         Console.WriteLine($"A {Make} {Model} has a honk noise that sounds like {HonkNoise}.");
     }
+
+    public Car()
+    {
+        CarLot._numberOfCars++;
+    }
     
 }

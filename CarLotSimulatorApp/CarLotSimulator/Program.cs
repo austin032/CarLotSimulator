@@ -19,8 +19,12 @@ namespace CarLotSimulator
             //Call each of the methods for each car
             
             var carOne = new Car();
+            Console.WriteLine($"Cars created: {CarLot._numberOfCars}");
             var carTwo = new Car();
+            Console.WriteLine($"Cars created: {CarLot._numberOfCars}");
             var carThree = new Car();
+            Console.WriteLine($"Cars created: {CarLot._numberOfCars}");
+            var carLotOne = new CarLot();
             
             carOne.Make = "Honda";
             carTwo.Make = "BMW";
@@ -46,6 +50,14 @@ namespace CarLotSimulator
             
             carThree.MakeEngineNoise("Whinnnnne");
             carThree.MakeHonkNoise("Hooooooonk");
+            
+            carLotOne.ParkingLot.Add(carOne);
+            carLotOne.ParkingLot.Add(carTwo);
+            carLotOne.ParkingLot.Add(carThree);
+            
+            carLotOne.CheckCars();
+            
+            
 
             //*************BONUS*************//
 
